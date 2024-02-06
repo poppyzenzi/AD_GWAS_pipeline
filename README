@@ -1,0 +1,16 @@
+#########################################################################################################
+
+A repository for conducting association testing in REGENIE
+for participating cohorts in the elevated symptoms of depression in adolescence GWAS
+
+Instructions:
+
+- Install REGENIE if not already installed: https://rgcgithub.github.io/regenie/install/
+- Clone this GitHub repository
+- Edit scripts 1-4 with the correct set up, directory and file path information (see examples directory)
+- Run the master shell script; this will run all 4 scripts in succession
+- Return back to the SOP for how to upload and report your results
+
+For any questions or uncertainties please contact Poppy Grimes at p.grimes@ed.ac.uk
+
+#########################################################################################################
