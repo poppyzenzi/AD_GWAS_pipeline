@@ -43,6 +43,8 @@ for chr in {1..22}; do
 
 done
 
+## You will then need to merge the output (22 chromosomes into one file)
+
 # --bgen = path to imputed data. Here we use the .bgen format split by chromosome. See REGENIE documention for more info on file input
 # --phenoFile = path to your phenotype file with the header FID IID pheno_col
 # --phenoCol = phenotype column name
