@@ -1,16 +1,3 @@
----
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(klippy)
-```
-
-```{r klippy, echo=FALSE, include=TRUE}
-klippy::klippy(c('r','bash'))
-```
-
 ## Adolescent depression symptoms GWAS
 
 A repository of example scripts for REGENIE association testing in the elevated symptoms of depression in adolescence GWAS
