@@ -6,7 +6,7 @@ for participating cohorts in the elevated symptoms of depression in adolescence 
 We provide example scripts for running REGENIE in the ALSPAC cohort
 
 - Install REGENIE if not already installed: https://rgcgithub.github.io/regenie/install/
-- To use example scripts as templates: Clone this GitHub repository and edit as appropriate
+- To use example scripts as templates: Clone this GitHub repository (git clone git@github.com:poppyzenzi/AD_GWAS_pipeline.git) and edit as appropriate
 - If you already have a pipeline set-up or don't need templates, please still refer to our examples to make sure flags and thresholds correspond 
 - Return back to the SOP for how to upload and report your results
 
