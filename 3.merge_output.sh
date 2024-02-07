@@ -7,13 +7,13 @@ OUTPUT=/exports/igmm/eddie/GenScotDepression/users/poppy/aGWAS/cohorts/alspac/ou
 COHORT="ALSPAC"
 
 # Specify the output file name
-MERGED_OUTPUT=$OUTPUT_DIR/${COHORT}_merged.regenie
+MERGED_OUTPUT=$OUTPUT/${COHORT}_merged.regenie
 
 # Remove any existing merged output file
 rm -f $MERGED_OUTPUT
 
 # Loop through the output files and concatenate them
-for file in $OUTPUT_DIR/step2_chr*.regenie; do
+for file in $OUTPUT/step2_chr*.regenie; do
     # Skip the header in all files except the first one
     if [ ! -f $MERGED_OUTPUT ]; then
         cat "$file" >> "$MERGED_OUTPUT"
