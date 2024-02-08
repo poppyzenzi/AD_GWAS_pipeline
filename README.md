@@ -1,4 +1,4 @@
-## Adolescent depression symptoms GWAS
+# Adolescent depression symptoms GWAS
 
 A repository of example scripts for REGENIE association testing in the elevated symptoms of depression in adolescence GWAS
 
@@ -12,7 +12,7 @@ git clone git@github.com:poppyzenzi/AD_GWAS_pipeline.git
 ```
   + Edit scripts and set-up as appropriate
 * If you already have a pipeline set-up or don't need templates, please still refer to our examples to make sure flags and thresholds correspond 
-* Please make sure you have converted -log10P values to raw P values (see script `convert-log10P.sh`)
+* After running association testing, please make sure you have converted -log10P values to raw P values (see script `convert-log10P.sh`)
 * Generate Manhattan and QQ plots using the `4.plot_results.R` script provided (will need to filter SNPs, see script `filter_SNPs_to_plot.sh`)
 * Return back to the SOP document for how to upload and report your results
 
