@@ -7,7 +7,7 @@ OUTPUT=/exports/igmm/eddie/GenScotDepression/users/poppy/aGWAS/cohorts/alspac/ou
 COHORT="ALSPAC"
 
 # Specify the output file name
-MERGED_OUTPUT=$OUTPUT/${COHORT}_merged.regenie
+MERGED_OUTPUT=$OUTPUT/${COHORT}_adoldep_EUR.regenie
 
 # Remove any existing merged output file
 rm -f $MERGED_OUTPUT
@@ -22,12 +22,4 @@ for file in $OUTPUT/step2_chr*.regenie; do
     fi
 done
 
-# When uploading your results please submit a gzipped file with the following name structure:
-
-# "STUDY_PHENOTYPE_DDMMYY.gz"
-
-# STUDY = short identifier for study name
-# PHENOTYPE = name of trait 
-# DDMMYY = day, month, year
-
-
+###############################################################################
