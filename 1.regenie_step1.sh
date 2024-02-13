@@ -10,6 +10,7 @@
 
 ## REGENIE STEP 1 - whole genome regression model is fit to the traits, and a set of genomic predictions are produced as output
 
+# REGENIE handles relatedness so please retain related indivudals in your data
 # This is an example script in the ALSPAC cohort. Please edit for your data and cluster set-up.
  
 # Load environment modules 
