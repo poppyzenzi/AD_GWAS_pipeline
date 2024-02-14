@@ -1,9 +1,11 @@
 library(topr)
 library(dplyr)
 
-## Please make sure you have filtered SNPs (P<=1e-03) and converted P values before running this script
+## Requirements
+# Please make sure -log10P values have been converted to raw P values before running this script
+# Manhattan plot: Please make sure you have FILTERED SNPs (P<=1e-03)
+# QQ plot: Please use the UNFILTERED data 
 # See shell scripts `convert_-log10P.sh` and `filter_SNPs_to_plot.sh`
-
 
 # Set working directory
 setwd('/exports/igmm/eddie/GenScotDepression/users/poppy/aGWAS/cohorts/alspac/output')
@@ -29,7 +31,6 @@ for (ancestry in ancestry_list) {
             sign_thresh_color = "black",
             sign_thresh_label_size = 0,
 	    ymax = 20, ymin = 3, scale = 0.8,
-            color = "darkred",
             title = paste("ALSPAC (", ancestry, ")"))
 
   dev.off()
@@ -41,8 +42,8 @@ for (ancestry in ancestry_list) {
 
   sumstats <- read.table(paste0("alspac_P_adoldep_", ancestry, ".regenie"), header = TRUE)
 
- # Set working directory for plots
   setwd('/exports/igmm/eddie/GenScotDepression/users/poppy/aGWAS/plots')
+  
   tiff(paste0("alspac_qq_plot_", ancestry, ".tiff"), width=6, height=6, units="in", res=300)
 
   qqtopr(sumstats, title=paste("ALSPAC (", ancestry, ")"))
@@ -51,4 +52,4 @@ for (ancestry in ancestry_list) {
 
 }
 
-
+###############################################################################
