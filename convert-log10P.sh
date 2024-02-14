@@ -1,3 +1,5 @@
+####################################################################################################
+
 ## REGENIE outputs -log10P values
 ## You will need to convert these to raw P values for the final result and for plotting
 
@@ -11,3 +13,5 @@ awk '{printf "%s %.10f\n", $0, 10^(-$13)}' alspac_adoldep_EUR.regenie > alspac_P
 sed -i -e '1s/1.0000000000/P/' alspac_P_adoldep_EUR.regenie
 
 # (You could also do this in R if preferred) 
+
+####################################################################################################
