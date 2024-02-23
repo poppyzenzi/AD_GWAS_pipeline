@@ -34,7 +34,7 @@ These are also included in the shell scripts provided
 
 `--phenoCol`: Phenotype column name
 
-`--covarFile`: Covariate file path with the header FiD IID C1 C2 C3 etc.
+`--covarFile`: Covariate file path with the header `FID IID C1 C2 C3`
 
 `--covarCol`: Covariate column names
 
@@ -54,7 +54,7 @@ These are also included in the shell scripts provided
 
 `--sample`: Sample file corresponding to input bgen (can also use `--keep` / `--remove` flags to only include individuals that pass QC filtering, see REGENIE documentation)
 
-`--covarFile`: Covariate file path with the header FiD IID C1 C2 C3 etc.
+`--covarFile`: Covariate file path with the header `FID IID C1 C2 C3`
 
 `--covarCol`: Covariate column names
 
