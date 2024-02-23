@@ -34,6 +34,10 @@ These are also included in the shell scripts provided
 
 `--phenoCol`: Phenotype column name
 
+`--covarFile`: Covariate file path with the header FiD IID C1 C2 C3 etc.
+
+`--covarCol`: Covariate column names
+
 `--bsize`: Chunk size for analysis
 
 `--bt`: Option for binary trait
@@ -49,6 +53,10 @@ These are also included in the shell scripts provided
 `--phenoCol`: Phenotype column name
 
 `--sample`: Sample file corresponding to input bgen (can also use `--keep` / `--remove` flags to only include individuals that pass QC filtering, see REGENIE documentation)
+
+`--covarFile`: Covariate file path with the header FiD IID C1 C2 C3 etc.
+
+`--covarCol`: Covariate column names
 
 `--bsize`: Chunk size for analysis
 

@@ -10,21 +10,18 @@
 
 ## REGENIE STEP 2 - a set of imputed SNPs are tested for association using a Firth logistic regression model
 
-# This is an example script in the ALSPAC cohort. Please edit for your data and cluster set-up.
-# For troubleshooting see the REGENIE documentation: https://rgcgithub.github.io/regenie/options/
+# This is an example script in the ALSPAC cohort. Please edit for your data and cluster set-up. For troubleshooting see the REGENIE documentation: https://rgcgithub.github.io/regenie/options/
 
-# Load environment modules
+# Load environment modules and add regenie to executable path
 . /etc/profile.d/modules.sh
 module load phys/compilers/gcc/11.2.0
-
-# Add regenie to executable path
 export PATH='/exports/igmm/eddie/GenScotDepression/users/poppy/regenie/build:$PATH'
 
 # Specify file paths
 IMPUTED=/exports/eddie/scratch/s2421111/alspac_1kg
 ALSPAC=/exports/igmm/eddie/GenScotDepression/users/poppy/aGWAS/cohorts/alspac
 
-# Loop through chromosomes and run step 2
+# Loop through imputed chromosomes and run step 2
 for chr in {1..22}; do
     regenie_v3.3 \
         --step 2 \
@@ -32,6 +29,8 @@ for chr in {1..22}; do
         --phenoFile $ALSPAC/pheno/alspac_pheno \
         --phenoCol adol_dep \
         --sample $IMPUTED/data.sample \
+	--covarFile covs/covariates.txt \
+  	--covarCol PC{1:10} \
         --bsize 1000 \
         --minMAC 100 \
         --minINFO 0.1 \
@@ -49,6 +48,8 @@ done
 # --phenoFile = path to your phenotype file with the header FID IID pheno_col
 # --phenoCol = phenotype column name
 # --sample = sample file corresponding to input bgen (can also use --keep / --remove flags to only include indiviudals that pass QC filtering, see REGENIE documentation)
+# --covarFile = covariate file path with the header FiD IID C1 C2 C3 etc.
+# --covarCol = covariate column names
 # --bsize = chunk size for analysis
 # --minMAC = minimum minor allele count
 # --minINFO = minimum imputation info score
