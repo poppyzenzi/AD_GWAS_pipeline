@@ -35,6 +35,7 @@ for chr in {1..22}; do
         --minMAC 100 \
         --minINFO 0.1 \
         --bt \
+	--af-cc \
         --firth --approx \
         --pThresh 0.01 \
         --pred $ALSPAC/fit_bin_out_dep_pred.list \
@@ -54,6 +55,7 @@ done
 # --minMAC = minimum minor allele count
 # --minINFO = minimum imputation info score
 # --bt = binary trait
+# --af-cc = to output A1FREQ in case/controls separately in the step 2 result file and N_CASES N_CONTROLS
 # --firth --approx = firth LRT, computational speed up
 # --pThresh = P-value threshold to apply firth correction
 # --pred = path to file containing predictions from STEP 1
