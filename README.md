@@ -66,6 +66,8 @@ These are also included in the shell scripts provided
 
 `--bt`: Option for binary trait
 
+`--af-cc` : To output A1FREQ in case/controls separately in the step 2 result file and N_CASES N_CONTROLS
+
 `--firth` `--approx`: Firth LRT, computational speed up
 
 `--pThresh`: P-value threshold to apply firth correction
