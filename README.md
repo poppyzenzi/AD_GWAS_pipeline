@@ -2,6 +2,8 @@
 
 A repository of example scripts for REGENIE association testing in the elevated symptoms of depression in adolescence GWAS
 
+LINK TO LIVE SOP: https://docs.google.com/document/d/1ppvOzH2Rjb-8Z2eqe86ct03E51MtS25q/edit?usp=sharing&ouid=108956179468703355713&rtpof=true&sd=true
+
 ## Instructions
 
 * Install REGENIE if not already installed: https://rgcgithub.github.io/regenie/install/
