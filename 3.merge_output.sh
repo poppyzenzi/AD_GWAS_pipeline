@@ -24,6 +24,5 @@ done
 
 # After merging please:
 #  Convert -log10P values to raw P if applicable
-#  Filter SNPs for plotting (do not filter final uploaded results)
 
 ###############################################################################
